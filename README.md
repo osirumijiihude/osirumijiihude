@@ -1,10 +1,9 @@
 ## Hello there👋, thanks for dropping by.
-👨🏽‍🚀 My name is Osi, i'm a 17y/o high school student from Harare, Zimbabwe. I'm passionate about astronomy, climate change and anything to do with robots (*which is why i also love coding*).
+👨🏽‍🚀 My name is Osi, i'm a 17y/o high school student from Harare, Zimbabwe. I'm passionate about astronomy🪐, climate change🐳 and anything to do with robots🤖 (*which is why i also love coding*).
 
 
 
 - 🎨 Pronouns: He/him
-- 🔭 I’m passionate about: Space
 - ⚡ What I love doing: Building robots and other cool stuff :)
 - 💫 Hobbies: Chess
 - 🌱 I’m currently learning: Flutter
