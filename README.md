@@ -1,5 +1,5 @@
 ## Hello there👋🏽, thanks for dropping by.
-👨🏽‍🚀 My name is Osi, i'm a 17y/o self-taught full stack web and mobile app developer from Harare, Zimbabwe. I'm passionate about astronomy🪐, climate change🐳 and anything to do with robots🤖 (*which is why i also love coding*).
+👨🏽‍🚀 My name is Osi, i'm a 17y/o web and mobile app developer from Harare, Zimbabwe. I'm passionate about astronomy🪐, climate change🐳 and anything to do with robots🤖 (*which is why i also love coding*).
 
 **Languages and tools:**  
 
@@ -21,14 +21,14 @@
 - 👯 I’m looking to collaborate on: Anything really :)... https://osirumijiihude.space#contact
 
 
-**What i'm currently working on:**
+### What i'm currently working on:
 
 [**→ Dzidzo**](https://dzidzo.org/) - A gamified mobile and web educational platform for students in Zimbabwe
 
 
 
 
-What i'd love to learn one day:
+**What i'd love to learn one day:**
 - AI/ML
 - Java
 - Pentesting
