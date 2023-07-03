@@ -1,4 +1,4 @@
-### Hello there👋, thanks for dropping by.
+## Hello there👋, thanks for dropping by.
 👨🏽‍🚀 My name is Osi, i'm a 17y/o high school student from Harare, Zimbabwe. I'm passionate about astronomy, climate change and anything to do with robots (*which is why i also love coding*).
 
 
@@ -23,6 +23,8 @@ What i'd love to learn one day:
 - Pentesting
 
 > Check out my website: [`osirumijiihude.space`](https://osirumijiihude.space) to learn more about me.
+
+### Let's connect!
 
 <table>
     <tbody>
