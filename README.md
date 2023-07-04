@@ -18,7 +18,7 @@
 - 💫 Hobbies: Chess
 - 🌱 I’m currently learning: Flutter
 - 🐱‍🏍 I’d love to get better at: Coding...
-- 👯 I’m looking to collaborate on: Anything really :)... https://osirumijiihude.space#contact
+- 👯 I’m looking to collaborate on: Anything really :)... feel free to get in touch with me below
 
 
 ### What i'm currently working on:
@@ -43,10 +43,14 @@
     <tbody>
       <tr>
         <td>
-          <a href="https://linkedin.com/in/osirumijiihude/">Linkedin</a>
+         <a href="https://www.linkedin.com/in/osirumijiihude/">
+  <img align="left" alt="Osirumiji Ihude | Linkedin" width="19px" src="https://raw.githubusercontent.com/peterthehan/peterthehan/master/assets/linkedin.svg"/>Linkedin
+</a>
         </td>
         <td>
-          <a href="https://twitter.com/osirumijiihude">Twitter</a>
+          <a href="https://twitter.com/osirumijiihude">
+  <img align="left" alt="Osirumiji Ihude | Twitter" width="19px" src="https://raw.githubusercontent.com/peterthehan/peterthehan/master/assets/twitter.svg" />Twitter
+</a>
         </td>
         <td>
           <a href="mailto:oihude@gmail.com">💬 Email</a>
