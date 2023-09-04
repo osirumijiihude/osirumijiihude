@@ -37,6 +37,17 @@
 
 <a href="https://www.buymeacoffee.com/osirumijiihude" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-green.png" alt="Buy Me A Coffee" width="150" ></a>
 
+<table>
+  <tr>
+    <td align="center" style="padding=0;width=75%;">
+      <img align="center" style="padding=0;" src="https://github-readme-stats-ten-blue-80.vercel.app/api?username=osirumijiihude&count_private=true&show_icons=true&theme=default#gh-light-mode-only&hide_border=true" />
+    </td>
+    <td align="center" style="padding=0;width=50%;">
+      <img align="center" style="padding=0;" src="https://github-readme-stats.vercel.app/api/top-langs/?username=osirumijiihude&count_private=true&show_icons=true&theme=default#gh-light-mode-only&hide_border=true&layout=compact&hide=javascript&langs_count=6" />
+    </td>
+  </tr>
+</table>
+
 ### Let's connect!
 
 <table>
@@ -64,4 +75,3 @@
       </tr>
     </tbody>
   </table>
-
