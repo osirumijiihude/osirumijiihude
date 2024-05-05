@@ -1,0 +1,19 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://www.osirumijiihude.space/sitemap.xml
+
+User-agent: Googlebot
+Disallow: /private/
+
+User-agent: Bingbot
+Disallow: /admin/
+
+User-agent: Yandex
+Disallow: /account/
+
+User-agent: Baiduspider
+Disallow: /login/
+
+User-agent: *
+Disallow: /secret/
