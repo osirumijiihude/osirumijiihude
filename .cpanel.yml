@@ -3,10 +3,12 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home1/osirumij/public_html/
-    - /bin/cp -R .vscode $DEPLOYPATH
-    - /bin/cp -R assets $DEPLOYPATH
-    - /bin/cp -R css $DEPLOYPATH
-    - /bin/cp -R fonts $DEPLOYPATH
     - /bin/cp -R img $DEPLOYPATH
+    - /bin/cp -R css $DEPLOYPATH
+    - /bin/cp -R php $DEPLOYPATH
+    - /bin/cp -R docs $DEPLOYPATH
     - /bin/cp -R js $DEPLOYPATH
-    /bin/cp index.html $DEPLOYPATH
+    - /bin/cp index.html $DEPLOYPATH
+    - /bin/cp -R robots.txt $DEPLOYPATH
+    - /bin/cp -R readme.md $DEPLOYPATH
+    - /bin/cp -R sitemap.xml $DEPLOYPATH
