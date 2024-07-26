@@ -3,7 +3,39 @@
 //  handlePageLoader
 // -------------------------------------------------------------------------------------------------------	
 
+document.addEventListener('DOMContentLoaded', () => {
+    // Function to update view count
+    function updateViewCount(postId) {
+        // Fetch the current views from local storage
+        let views = localStorage.getItem(`post-views-${postId}`) || 0;
+        views = parseInt(views) + 1; // Increment view count
 
+        // Update the local storage with the new view count
+        localStorage.setItem(`post-views-${postId}`, views);
+
+        // Update the display of the view count on the page
+        document.querySelector(`#view-count-${postId}`).textContent = ` ${views} views`;
+    }
+
+    // Attach event listeners to each blog post link to track views and allow navigation
+    document.querySelectorAll('.post-link').forEach(link => {
+        link.addEventListener('click', (event) => {
+            const postId = link.getAttribute('data-post-id');
+            updateViewCount(postId);
+            // Allow the link to navigate after updating the view count
+            setTimeout(() => {
+                window.location.href = link.href;
+            }, 100); // Delay to ensure view count updates before navigation
+        });
+    });
+
+    // Initialize view counts from local storage on page load
+    document.querySelectorAll('.view-counter').forEach(counter => {
+        const postId = counter.id.split('-').pop(); // Get post ID from counter ID
+        const views = localStorage.getItem(`post-views-${postId}`) || 0;
+        counter.textContent = ` ${views} views`;
+    });
+});
 // AGE calculator
 
 		// Function to calculate age from start date to current date in years

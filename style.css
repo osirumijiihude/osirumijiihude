@@ -11,6 +11,244 @@
     margin-left: auto;
 }
 
+/******** BLOG CARDS *******/
+
+.blog-section {
+    width: 100%;
+    padding-top: 85px;
+}
+
+.section-title-holder {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.blog-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.blog-card {
+    width: 30%; /* Each main blog card takes up 30% of the width */
+    margin-bottom: 40px;
+    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.half-card {
+    width: 100%; /* Full width within the wrapper */
+    margin-bottom: 20px; /* Space between the two half cards */
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+.half-card-wrapper {
+    width: 30%; /* Takes up the same width as a single full blog card */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 40px; /* Aligns with the margin of other cards */
+}
+
+
+.card-inner {
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.card-inner:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.card-image {
+    overflow: hidden;
+    border-bottom: 3px solid #FF5E5F;
+}
+
+.card-image img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+    transition: transform 0.3s ease;
+}
+
+.card-image:hover img {
+    transform: scale(1.1);
+}
+
+.card-details {
+    padding: 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-dates {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.view-counter {
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    color: #666;
+}
+
+.view-counter i {
+    margin-right: 5px;
+    color: #FF5E5F;
+}
+
+
+.view-counter i {
+    margin-right: 5px;
+    color: #FF5E5F;
+}
+
+
+
+.card-dates p {
+    font-size: 13px; /* Increased slightly for better readability */
+    color: #666;
+}
+
+.card-dates .category a {
+    text-decoration: none;
+    color: #FF5E5F;
+    border-bottom: 1px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.card-dates .category a:hover {
+    border-bottom-color: #FF5E5F;
+}
+
+.card-title {
+    margin-bottom: 15px;
+}
+
+.card-title h3 {
+    font-size: 20px; /* Slightly larger title size */
+    margin: 0;
+}
+
+.card-title h3 a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.card-title a:hover {
+    color: #FF5E5F;
+}
+
+.card-text {
+    font-size: 15px; /* Increased preview text size */
+    margin: 10px 0;
+    color: #666;
+    line-height: 1.6;
+}
+
+.card-text a {
+    text-decoration: none;
+    color: #FF5E5F;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.card-text a:hover {
+    color: #333;
+}
+
+.read-more {
+    margin-top: auto;
+}
+
+.read-more a {
+    display: inline-block;
+    font-size: 16px; /* More prominent size for read more */
+    color: #fff;
+    background-color: #FF5E5F;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.read-more a:hover {
+    background-color: #e04a4b;
+}
+
+/* Pinned Icon */
+
+.pinned-tag {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    color: #FF5E5F;
+    z-index: 2;
+}
+
+
+/* Responsive adjustments */
+/* For tablets and smaller devices */
+/* BLOG CARDS */
+
+
+
+/* Responsive adjustments */
+@media screen and (max-width: 991px) {
+    .half-card-wrapper,
+    .blog-card {
+        width: 100%; /* Full width for all cards on smaller screens */
+    }
+
+    .half-card {
+        margin-bottom: 20px; /* Maintain some spacing between half cards */
+    }
+}
+
+
+/* For mobile devices */
+@media screen and (max-width: 767px) {
+    .blog-card {
+        width: 100%; /* Single card per row */
+        margin-bottom: 30px;
+        padding: 0;
+    }
+
+    .card-title h3 {
+        font-size: 18px; /* Smaller title size for mobile */
+    }
+
+    .card-text {
+        font-size: 14px; /* Slightly reduced preview text size for mobile */
+    }
+
+    .read-more a {
+        font-size: 14px; /* Reduced size for read more */
+    }
+}
+
+
+
 /* 2024.5/5 */
 /* chess.com widget */
 
@@ -437,11 +675,18 @@
   }
 
   .project-image-preview {
-    width: 350px; 
-    height: 150px; 
-    border-radius: 10px; 
+    width: 350px; /* Set the desired width */
+    height: 13fyyhu0px; /* 4:3 aspect ratio: width * 3/4 */
+    border-radius: 10px; /* Optional: Adds rounded corners */
     margin-bottom: 10px;
-  }
+    background-size: contain; /* Ensures the image fits within the container */
+    background-position: center; /* Centers the image within the container */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-color: #f0f0f0; /* Fills any space not covered by the image */
+    /* Optional: Adjust padding if you want some spacing inside the container */
+}
+
+
 
   .research-image-preview {
     width: 350px; 
