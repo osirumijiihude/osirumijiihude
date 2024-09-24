@@ -1,82 +1,105 @@
 <!DOCTYPE html>
-<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
-<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
-<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!-->
-<!--2024.5.5 Update-->
-
-<html lang="en">
-<!--<![endif]-->
+<html lang="en-GB">
 
 <head>
+    <!-- Character Set -->
     <meta charset="UTF-8">
 
-    <!-- Theme color -->
+    <!-- Title -->
+    <title>Osirumiji Ihude | Teen Scientist and Inventor</title>
+
+    <!-- Theme color for browsers -->
     <meta name="theme-color" content="#f52225">
-    <!-- Web app mode -->
+
+    <!-- Mobile Web App Settings -->
     <meta name="mobile-web-app-capable" content="yes">
-    <!-- Favicon animation -->
-    <meta name="icon-animation" content="spin">
-    <title> Osirumiji Ihude </title>
-    <meta name="description" content="Osirumiji is a teen Scientist &amp; inventor, Space enthusiast, &amp; STEM advocate passionate about leveraging technology to solve global challenges">
-    <meta name="keywords" content="Osirumiji Ihude, Teen Scientist, inventor, Space enthusiast, Climate change researcher, Chess player, STREM promoter, STEM, technology, real-world challenges">
-    <meta name="author" content="Osirumiji Ihude">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-    <meta name="revisit-after" content="2 days">
+
+    <!-- Description -->
+    <meta name="description" content="Osirumiji is a teen scientist, inventor, space enthusiast, chess player, and STEM advocate passionate about using technology to solve global challenges.">
+
+    <!-- Keywords -->
+    <meta name="keywords" content="Osirumiji Ihude, Teen Scientist, Inventor, Space Enthusiast, Climate Change Researcher, Chess Player, STEM Advocate, Technology Innovator, Global Challenges, Ethical Hacking">
+
+    <!-- Author -->
+    <meta name="author" content="Osirumiji Ihude">
+
+    <!-- Favicon -->
     <link rel="icon" href="favicon.png">
 
-    <!-- SOCIAL MEDIA META TAGS -->
+    <!-- Enhanced Google Search Display (Rich Snippets, Site Links) -->
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta name="revisit-after" content="1 days">
+
+    <!-- Security Meta Tags -->
+    <!-- Prevent clickjacking -->
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    <!-- Prevent XSS attacks -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self'; object-src 'none'; frame-ancestors 'none'; upgrade-insecure-requests; block-all-mixed-content;">
+    <!-- Ensure proper rendering and touch zoom -->
+    <meta name="HandheldFriendly" content="true">
+    <!-- Referrer policy to prevent leaking data -->
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    <!-- Enforce HTTPS -->
+    <meta http-equiv="Strict-Transport-Security" content="max-age=31536000; includeSubDomains; preload">
+    <!-- Prevent MIME sniffing -->
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <!-- Disable caching of sensitive data -->
+    <meta http-equiv="Cache-Control" content="no-store, no-cache, must-revalidate, proxy-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+
+    <!-- PWA Support -->
+    <link rel="manifest" href="/manifest.json">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+    <!-- Open Graph for social media preview -->
     <meta property="og:type" content="website">
     <meta property="og:title" content="Osirumiji Ihude | Teen Scientist and Inventor">
-    <meta property="og:description" content="Osirumiji is a teen Scientist &amp; inventor, Space enthusiast &amp; STEM advocate passionate about leveraging technology to solve the world's challenges">
+    <meta property="og:description" content="Osirumiji is a teen scientist, inventor, space enthusiast, and STEM advocate passionate about solving global challenges.">
     <meta property="og:url" content="https://www.osirumijiihude.space/">
-    <meta property="og:image" content="https://osirumijiihude.space/img/preview.png">
+    <meta property="og:image" content="https://www.osirumijiihude.space/img/preview.png">
     <meta property="og:site_name" content="Osirumiji Ihude">
-    <meta property="og:locale" content="en_US">
-    <meta property="profile:first_name" content="Osirumiji">
-    <meta property="profile:last_name" content="Ihude">
-    <meta property="profile:username" content="osirumiji">
-    <meta property="profile:gender" content="Male">
+    <meta property="og:locale" content="en_GB">
+
+    <!-- LinkedIn -->
     <meta property="linkedin:title" content="Osirumiji Ihude | Teen Scientist and Inventor">
-    <meta property="linkedin:description" content="Osirumiji is a teen Scientist &amp; inventor, Space enthusiast, Chess player &amp; STEM advocate passionate about leveraging technology to solve the world's challenges">
-    <meta property="linkedin:image" content="https://osirumijiihude.space/img/preview.png">
+    <meta property="linkedin:description" content="Osirumiji is a teen scientist, space enthusiast, and chess player leveraging technology to solve real-world problems.">
+    <meta property="linkedin:image" content="https://www.osirumijiihude.space/img/preview.png">
 
-    <!-- BOT META TAGS -->
-    <meta name="robots" content="index, follow">
-    <meta name="googlebot" content="index, follow">
-    <meta name="bingbot" content="index, follow">
-    <meta name="msnbot" content="index, follow">
-    <meta name="Slurp" content="index, follow">
-    <meta name="DuckDuckBot" content="index, follow">
-    <meta name="Applebot" content="index, follow">
-
-    <!-- TWITTER META TAGS -->
-    <meta name="twitter:card" content="summary">
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Osirumiji Ihude | Teen Scientist and Inventor">
-    <meta name="twitter:description" content="Osirumiji is a teen Scientist &amp; inventor, Space enthusiast, Chess player &amp; STEM advocate passionate about leveraging technology to solve the world's challenges">
+    <meta name="twitter:description" content="Teen scientist, inventor, and space enthusiast solving global challenges through technology.">
     <meta name="twitter:url" content="https://www.osirumijiihude.space/">
-    <meta name="twitter:image" content="https://osirumijiihude.space/img/preview.png">
+    <meta name="twitter:image" content="https://www.osirumijiihude.space/img/preview.png">
+    <meta name="twitter:creator" content="@osirumijiihude">
 
     <!-- Schema.org markup for Google -->
     <meta itemprop="name" content="Osirumiji Ihude">
-    <meta itemprop="description" content="Osirumiji is a teen Scientist &amp; inventor, Space enthusiast, Chess player &amp; STEM advocate passionate about leveraging technology to solve the world's challenges">
-    <meta itemprop="image" content="https://osirumijiihude.space/img/preview.png">
+    <meta itemprop="description" content="Teen scientist, inventor, and space enthusiast leveraging technology to solve the world's challenges.">
+    <meta itemprop="image" content="https://www.osirumijiihude.space/img/preview.png">
 
     <!-- Dublin Core metadata -->
     <meta name="DC.title" content="Osirumiji Ihude">
     <meta name="DC.creator" content="Osirumiji Ihude">
-    <meta name="DC.subject" content="Science, Technology, Engineering, Mathematics, Chess, Space">
-    <meta name="DC.description" content="Osirumiji is a teen Scientist &amp; inventor, Space enthusiast, Chess player &amp; STEM advocate passionate about leveraging technology to solve the world's challenges">
+    <meta name="DC.subject" content="Science, Technology, Engineering, Mathematics, Space, Chess">
+    <meta name="DC.description" content="Osirumiji is a teen scientist, inventor, space enthusiast, and chess player.">
     <meta name="DC.publisher" content="Osirumiji Ihude">
     <meta name="DC.format" content="text/html">
     <meta name="DC.identifier" content="https://www.osirumijiihude.space/">
-    <meta name="DC.language" content="en_US">
+    <meta name="DC.language" content="en_GB">
     <meta name="DC.coverage" content="World">
     <meta name="DC.type" content="Website">
     <meta name="DC.rights" content="Copyright">
 
-
-
+    <!-- Social Links -->
+    <link rel="me" href="https://twitter.com/osirumijiihude" type="text/html">
+    <link rel="me" href="https://github.com/osirumijiihude" type="text/html">
+    <link rel="me" href="https://www.linkedin.com/in/osirumiji-ihude/" type="text/html">
 
     <!-- STYLES -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
@@ -355,7 +378,7 @@
 
                             <p style="font-family: 'Courier New', Courier, monospace; font-weight: bold; font-size: 20px;">$ whoami</p>
                             <br>
-                            <p>Hello there! I am an <span id="age"></span> year old Zimbabwe - South Sudanese student
+                            <p>Hello there! I am a <span id="age"></span> year old Zimbabwe - South Sudanese student
                                 passionate about using technology to make the world a better place.</p>
                             <br>
                             <p>I'm deeply interested in robotics, astronomy and environmental sustainability.
@@ -439,7 +462,7 @@
                                                             <span>Religion: </span>
                                                             Proud Christian <img src="img/about/cross.png" alt="Cross" style="height:2em; vertical-align:bottom;">
 
-                                                            <a href="https://www.youtube.com/watch?v=Re3ya-F99Y8" target="_blank" rel="noopener noreferrer" style="text-decoration: none;">Why I believe &amp; you should too </a>
+                                                            <a href="https://youtube.com/playlist?list=PLxHFO7yXuB9bWBuCd6zCES1DReNcLLJmu&si=WUhizCFxeczozmkv" target="_blank" rel="noopener noreferrer" style="text-decoration: none;">Why I believe &amp; you should too </a>
 
 
                                                         </p>
@@ -856,13 +879,13 @@ Button = see all -->
                                                             <span>1st place</span> - <abbr title="National AIDS Council">NAC</abbr> Harare championship '24
                                                         </p>
                                                         <p>
-                                                            <span>2nd place</span> - World Robot Olympiad Harare hackathon 2024 
+                                                            <span>2nd place</span> - World Robot Olympiad Harare hackathon (National finalist) 2024 
                                                         </p>
                                                         <p>
                                                             <span>2nd place</span> - Africa Science Buskers Festival 2024
                                                         </p>
                                                         <p>
-                                                            <span>2nd place</span> - TeXpo SteamOn 2024 - The Good Samaritan Hackathon
+                                                            <span>2nd place</span> - TeXpo SteamOn Hackathon 2024 - The Good Samaritan Hack
                                                         </p>
                                                         <p>
                                                             <span>2nd place</span> - <abbr title="Ministry of Primary and Secondary Education in Zimbabwe">MOPSE</abbr> x Mavambo quiz championships '24
