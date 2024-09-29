@@ -11,6 +11,55 @@
     margin-left: auto;
 }
 
+/* Default Styles */
+.fullwidth-section {
+    margin-left: 400px; /* Only for large screens */
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .fullwidth-section {
+        margin-left: 0; /* Remove left margin on mobile */
+        text-align: center; /* Center the content on smaller screens */
+    }
+
+    .client-logos {
+        padding: 0;
+        margin: 0 auto; /* Center align logos */
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center; /* Logos centered in flex container */
+    }
+
+    .client-logos li {
+        padding: 10px; /* Space between logos */
+    }
+}
+
+
+/******** Skills slider ******/
+
+.tokyo_progress .background {
+    height: 10px;
+    background: #e0e0e0;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.tokyo_progress .bar_in {
+    height: 10px;
+    background: #3498db; /* Progress bar color */
+    border-radius: 5px;
+    width: 0; /* Start with 0 width */
+    transition: width 3s ease-in-out; /* Slower width animation */
+}
+
+.tokyo_progress .progress_inner {
+    margin-bottom: 20px;
+}
+
+
+
 /******** BLOG CARDS *******/
 
 .blog-section {

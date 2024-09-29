@@ -3,6 +3,34 @@
 //  handlePageLoader
 // -------------------------------------------------------------------------------------------------------	
 
+document.addEventListener("DOMContentLoaded", function () {
+    // Function to animate the progress bars
+    const animateProgressBars = () => {
+        const progressBars = document.querySelectorAll(".progress_inner");
+        
+        progressBars.forEach((bar) => {
+            const barIn = bar.querySelector(".bar_in");
+            const value = bar.getAttribute("data-value");
+            barIn.style.width = value + "%"; // Set the width based on data-value
+        });
+    };
+
+    // Intersection Observer to detect when the section comes into view
+    const section = document.querySelector(".tokyo_progress");
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                animateProgressBars();
+                observer.unobserve(section); // Run only once
+            }
+        });
+    });
+
+    observer.observe(section);
+});
+
+
 document.addEventListener('DOMContentLoaded', () => {
     // Function to update view count
     function updateViewCount(postId) {

@@ -1,15 +1,36 @@
-##### THIS ALLOWS US TO DEPLOY THE SITE FROM A GIT REPO ######
+# Deploy site changes from the Git repository to cPanel
 ---
 deployment:
   tasks:
+    # Define deployment path
     - export DEPLOYPATH=/home1/osirumij/public_html/
+    
+    # Copy images folder
     - /bin/cp -R img $DEPLOYPATH
+    
+    # Copy CSS files
     - /bin/cp -R css $DEPLOYPATH
+    
+    # Copy PHP files
     - /bin/cp -R php $DEPLOYPATH
+    
+    # Copy documentation files
     - /bin/cp -R docs $DEPLOYPATH
+    
+    # Copy JavaScript files
     - /bin/cp -R js $DEPLOYPATH
+    
+    # Copy index.html
     - /bin/cp index.html $DEPLOYPATH
-    - /bin/cp -R robots.txt $DEPLOYPATH
-    - /bin/cp -R readme.md $DEPLOYPATH
-    - /bin/cp -R sitemap.xml $DEPLOYPATH
-    - /bin/cp -R style.css $DEPLOYPATH
+    
+    # Copy robots.txt (make sure the file exists)
+    - /bin/cp robots.txt $DEPLOYPATH
+    
+    # Copy README file (optional)
+    - /bin/cp readme.md $DEPLOYPATH
+    
+    # Copy sitemap (SEO purposes)
+    - /bin/cp sitemap.xml $DEPLOYPATH
+    
+    # Copy main CSS file
+    - /bin/cp style.css $DEPLOYPATH

@@ -27,6 +27,8 @@
     <!-- Favicon -->
     <link rel="icon" href="favicon.png">
 
+    <!-- LOL i have no idea what i'm doing this is all ChatGPT  -->
+
     <!-- Enhanced Google Search Display (Rich Snippets, Site Links) -->
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
     <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
@@ -35,8 +37,6 @@
     <!-- Security Meta Tags -->
     <!-- Prevent clickjacking -->
     <meta http-equiv="X-Frame-Options" content="DENY">
-    <!-- Prevent XSS attacks -->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self'; object-src 'none'; frame-ancestors 'none'; upgrade-insecure-requests; block-all-mixed-content;">
     <!-- Ensure proper rendering and touch zoom -->
     <meta name="HandheldFriendly" content="true">
     <!-- Referrer policy to prevent leaking data -->
@@ -102,12 +102,11 @@
     <link rel="me" href="https://www.linkedin.com/in/osirumiji-ihude/" type="text/html">
 
     <!-- STYLES -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
+    <!--[if lt IE 9]> <script type="text/javascript" src="js/modernizr.custom.js"></script> <![endif]-->
+    
     <!-- Plugin CSS -->
     <link rel="stylesheet" type="text/css" href="css/plugins.css" />
 
@@ -116,6 +115,10 @@
 
     <!-- Main CSS -->
     <link rel="stylesheet" type="text/css" id="theme-style" href="style.css" />
+
+    <link rel="stylesheet" href="https://unpkg.com/github-calendar/dist/github-calendar-responsive.css">
+<script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
+
 
     <!--[if lt IE 9]> 
 		<script type="text/javascript" src="js/modernizr.custom.js"></script> 
@@ -402,33 +405,23 @@
                 </div>
                 <div class="beny_tm_title_holder">
                     <span>As featured on</span>
-                    <div class="fullwidth-section" style="margin-left: 400px;">
+                    <div class="fullwidth-section">
                         <div class="fullwidth-section-content">
                             <div class="row">
                                 <div class="span12">
                                     <ul id="client-logos" class="client-logos">
-
-                                        <li>
-                                            <a href="#"><img src="img/featured/180x80-1.png" alt=""></a>
-                                        </li>
-                                        <li>
-                                            <a href="#"><img src="img/featured/180x80-2.png" alt=""></a>
-                                        </li>
-                                        <li>
-                                            <a href="#"><img src="img/featured/180x80-3.webp" alt=""></a>
-                                        </li>
-                                        <li>
-                                            <a href="#"><img src="img/featured/180x80-5.png" alt=""></a>
-                                        </li>
-                                        <li>
-                                            <a href="#"><img src="img/featured/180x80-4.png" alt="" width="100%" height="40px"></a>
-                                        </li>
+                                        <li><a href="#"><img src="img/featured/180x80-1.png" alt=""></a></li>
+                                        <li><a href="#"><img src="img/featured/180x80-2.png" alt=""></a></li>
+                                        <li><a href="#"><img src="img/featured/180x80-3.webp" alt=""></a></li>
+                                        <li><a href="#"><img src="img/featured/180x80-5.png" alt=""></a></li>
+                                        <li><a href="#"><img src="img/featured/180x80-4.png" alt="" width="100%" height="40px"></a></li>
                                     </ul>
                                 </div><!-- end .span12 -->
                             </div><!-- end .row -->
                         </div><!-- end .fullwidth-section-content -->
                     </div><!-- end .fullwidth-section -->
                 </div>
+                
 
 
 
@@ -501,56 +494,57 @@
                                                     <img height="25" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/sql/sql.png">
 
                                                 </h4>
-                                                <div class="progress_inner">
-                                                    <span>
-                                                        <span class="label">Mobile &amp; Web dev (Flutter, Firebase, Dart, Django, JS, HTML/CSS, SQL, Git)</span>
-                                                        <span class="number"></span>
-                                                    </span>
-                                                    <div class="background">
-                                                        <div class="bar open">
-                                                            <div class="bar_in" style="width: 80%;"></div>
+                                               
+                                                <div class="tokyo_progress">
+                                                    <div class="progress_inner" data-value="80">
+                                                        <span>
+                                                            <span class="label">Mobile &amp; Web dev (Flutter, Firebase, Dart, Django, JS, HTML/CSS, SQL, Git)</span>
+                                                            <span class="number"></span>
+                                                        </span>
+                                                        <div class="background">
+                                                            <div class="bar open">
+                                                                <div class="bar_in"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                
+                                                    <div class="progress_inner" data-value="90">
+                                                        <span>
+                                                            <span class="label">Robotics &amp; Embedded systems (Python, C++, Arduino, Raspberry Pi, 3D modelling, PCB design)</span>
+                                                            <span class="number"></span>
+                                                        </span>
+                                                        <div class="background">
+                                                            <div class="bar open">
+                                                                <div class="bar_in"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                
+                                                    <div class="progress_inner" data-value="50">
+                                                        <span>
+                                                            <span class="label">AI &amp; Cybersecurity (Tensorflow, Python, Linux, OSINT, API Pentesting)</span>
+                                                            <span class="number"></span>
+                                                        </span>
+                                                        <div class="background">
+                                                            <div class="bar open">
+                                                                <div class="bar_in"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                
+                                                    <div class="progress_inner" data-value="50">
+                                                        <span>
+                                                            <span class="label">Graphic &amp; creative design (Davinci resolve, Canva, Adobe &amp; MS suite)</span>
+                                                            <span class="number"></span>
+                                                        </span>
+                                                        <div class="background">
+                                                            <div class="bar open">
+                                                                <div class="bar_in"></div>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
-
-                                                <div class="progress_inner">
-                                                    <span>
-                                                        <span class="label">Robotics &amp; Embedded systems (Python, C++, Arduino, Raspberry Pi, 3D modelling, PCB design)</span>
-                                                        <span class="number"></span>
-                                                    </span>
-                                                    <div class="background">
-                                                        <div class="bar open">
-                                                            <div class="bar_in" style="width: 90%;"></div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                                <div class="progress_inner">
-                                                    <span>
-                                                        <span class="label">AI &amp; Cybersecurity (Tensorflow, Python, Linux, OSINT, API Pentesting)</span>
-                                                        <span class="number"></span>
-                                                    </span>
-                                                    <div class="background">
-                                                        <div class="bar open">
-                                                            <div class="bar_in" style="width: 50%;"></div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                                <div class="progress_inner">
-                                                    <span>
-                                                        <span class="label">Graphic &amp; creative design (Davinci resolve, Canva, Adobe &amp; MS suite)</span>
-                                                        <span class="number"></span>
-                                                    </span>
-                                                    <div class="background">
-                                                        <div class="bar open">
-                                                            <div class="bar_in" style="width: 50%;"></div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-
-
+                                                
 
 
 
@@ -687,10 +681,13 @@
                                                             <li>
                                                                 <p id="playing-status"><span id="status-dot"></span>Loading...</p>
                                                                 <p id="blitz-rating">Rating: <span id="blitz-rating-value" style="font-size: 1em;"></span> blitz, <span id="rapid-rating-value" style="font-size: 1em;"></span> rapid</p>
-                                                                <p id="global-rank">Percentile: <span id="global-rank-value" style="font-size: 1em;">99.9%</span>   Games: <span id="global-rank-value" style="font-size: 1em;">812</span></p>
+                                                                <p id="global-rank">Percentile: <span id="global-rank-value" style="font-size: 1em;">99.9%</span>   Games: <span id="global-rank-value" style="font-size: 1em;">912</span></p>
                                                             </li>
                                                         </ul>
                                                     </div>
+                               
+                                                    
+
 
 
 
@@ -841,7 +838,6 @@ Button = see all -->
 
 
 
-
         <!-- /Science outreach -->
 
         <div class="beny_tm_about" id="honors">
@@ -873,23 +869,25 @@ Button = see all -->
                                                 <ul>
                                                     <li>
                                                         <p>
+                                                            <span>1st place</span> - <abbr title="National AIDS Council 2024">NAC</abbr> Harare championship
+                                                        </p>
+                                                        <p>
                                                             <span>1st place</span> - Orate Africa spelling bee Harare championships 2024
                                                         </p>
+                                                       
                                                         <p>
-                                                            <span>1st place</span> - <abbr title="National AIDS Council">NAC</abbr> Harare championship '24
-                                                        </p>
-                                                        <p>
-                                                            <span>2nd place</span> - World Robot Olympiad Harare hackathon (National finalist) 2024 
+                                                            <span>2nd place</span> - World Robot Olympiad Harare (National finalist) 2024 
                                                         </p>
                                                         <p>
                                                             <span>2nd place</span> - Africa Science Buskers Festival 2024
                                                         </p>
                                                         <p>
-                                                            <span>2nd place</span> - TeXpo SteamOn Hackathon 2024 - The Good Samaritan Hack
+                                                            <span>2nd place</span> - TeXpo SteamOn 2024 - The Good Samaritan Hack
                                                         </p>
                                                         <p>
                                                             <span>2nd place</span> - <abbr title="Ministry of Primary and Secondary Education in Zimbabwe">MOPSE</abbr> x Mavambo quiz championships '24
                                                         </p>
+
                                                         <p>
                                                             <span>Finalist</span> - Rise For The World global challenge 2023
                                                         </p>
@@ -908,10 +906,13 @@ Button = see all -->
                                                             <span>Rookie all star + Inspiration award</span> - First Robotics Competition '24
                                                         </p>
                                                         <p>
-                                                            <span>Ultramed Healthcare award</span> - Africa Science Buskers Festival (ASBF)
+                                                            <span>Ultramed Healthcare award</span> - <abbr title="Africa Science Buskers Festival">ASBF</abbr>
 
                                                         </p>
-                                                     
+                                                        <p>
+                                                            <span>Best in English - </span>Better Schools Programme Zimbabwe '19
+
+                                                        </p>
                                               
 
 
@@ -945,10 +946,7 @@ Button = see all -->
                                                             <span>Award for exceptional academic achievement - </span><abbr title="Methodist Church in Zimbabwe Schools">MCAZ</abbr> '19
 
                                                         </p>
-                                                        <p>
-                                                            <span>Best in English - </span>Better Schools Programme Zimbabwe '19
 
-                                                        </p>
 
 
 
@@ -1180,7 +1178,7 @@ Button = see all -->
             <div class="container">
                 <div class="inner">
                     <div class="copy wow fadeInLeft" data-wow-duration="1.2s">
-                        <p>Copyright &copy; Osirumiji Ihude <span id="currentYear"></span>. All rights reserved, I am currently alive</p>
+                        <p>Copyright &copy; Osirumiji Ihude <span id="currentYear"></span>. All rights reserved. <a>Date me</a></p>
                     </div>
                     <script>
                         var year = new Date().getFullYear();
