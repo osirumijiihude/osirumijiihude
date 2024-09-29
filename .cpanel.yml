@@ -22,6 +22,9 @@ deployment:
     
     # Copy index.html
     - /bin/cp index.html $DEPLOYPATH
+
+    # Copy style.css
+    - /bin/cp style.css $DEPLOYPATH
     
     # Copy robots.txt (make sure the file exists)
     - /bin/cp robots.txt $DEPLOYPATH
@@ -31,6 +34,6 @@ deployment:
     
     # Copy sitemap (SEO purposes)
     - /bin/cp sitemap.xml $DEPLOYPATH
-    
-    # Copy main CSS file
-    - /bin/cp style.css $DEPLOYPATH
+
+    # Copy
+    - /bin/cp .cpanel.yml $DEPLOYPATH
