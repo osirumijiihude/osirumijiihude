@@ -3,6 +3,8 @@
 //  handlePageLoader
 // -------------------------------------------------------------------------------------------------------	
 
+
+
 document.addEventListener("DOMContentLoaded", function () {
     // Function to animate the progress bars
     const animateProgressBars = () => {

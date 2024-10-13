@@ -367,6 +367,74 @@
 
 /* End of chess.com widget */
 
+/* Lichess Widget CSS - Independent from Chess.com widget */
+.lichess-widget {
+    width: 100%;
+    max-width: 400px;
+    background-color: #363636;
+    color: #f5f5f5;
+    border-radius: 9px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    padding: 15px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.lichess-widget .sidebar {
+    width: 40%;
+    text-align: center;
+    border-right: 1px solid #4a4a4a;
+    padding-right: 10px;
+}
+
+.lichess-widget .sidebar img {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+}
+
+.lichess-widget .sidebar h1 {
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: #f5f5f5;
+}
+
+.lichess-widget .sidebar p {
+    font-size: 12px;
+    color: #f5f5f5;
+}
+
+.lichess-widget .ratings {
+    width: 60%;
+    padding-left: 10px;
+}
+
+.lichess-widget .ratings h2 {
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.lichess-widget .icon {
+    margin-right: 5px;
+}
+
+.status-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.status-online {
+    background-color: #23d160;
+}
+
+.status-offline {
+    background-color: #4a4a4a;
+}
+
 /* Zim chess widget */
 
 
