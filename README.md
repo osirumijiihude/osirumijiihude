@@ -47,31 +47,3 @@
     </td>
   </tr>
 </table>
-
-### Let's connect!
-
-<table>
-    <tbody>
-      <tr>
-        <td>
-         <a href="https://www.linkedin.com/in/osirumijiihude/">
-  <img align="left" alt="Osirumiji Ihude | Linkedin" width="19px" src="https://raw.githubusercontent.com/peterthehan/peterthehan/master/assets/linkedin.svg"/>Linkedin
-</a>
-        </td>
-        <td>
-          <a href="https://twitter.com/osirumijiihude">
-  <img align="left" alt="Osirumiji Ihude | Twitter" width="19px" src="https://raw.githubusercontent.com/peterthehan/peterthehan/master/assets/twitter.svg" />Twitter
-</a>
-        </td>
-        <td>
-          <a href="mailto:oihude@gmail.com">💬 Email</a>
-        </td>
-        <td>
-          <a href="https://osirumijiihude.space">🌐 Website</a>
-        </td>
-            <td>
-          <a href="https://chess.com/angrybird_zw">♟ Chess.com</a>
-        </td>
-      </tr>
-    </tbody>
-  </table>
