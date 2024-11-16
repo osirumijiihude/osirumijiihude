@@ -1,5 +1,5 @@
 ## Hello there👋🏽, thanks for dropping by.
-👨🏽‍🚀 My name is Osi, i'm a 17y/o web and mobile app developer from Harare, Zimbabwe. I'm passionate about astronomy🪐, climate change🐳 and anything to do with robots🤖 (*which is why i also love coding*).
+👨🏽‍🚀 My name is Osi, i'm a 19y/o web and mobile app developer from Harare, Zimbabwe. I'm passionate about astronomy🪐, climate change🐳 and anything to do with robots🤖 (*which is why i also love coding*).
 
 **Languages and tools:**  
 
