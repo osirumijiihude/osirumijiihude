@@ -130,12 +130,14 @@ function updateChessStats() {
         const blitzRating = data.chess_blitz ? data.chess_blitz.last.rating : 'N/A';
         const rapidRating = data.chess_rapid ? data.chess_rapid.last.rating : 'N/A';
         const bulletRating = data.chess_bullet ? data.chess_bullet.last.rating : 'N/A';
+        const puzzleRating = data.chess_puzzle ? data.chess_puzzle.last.rating : 'N/A';
         const globalRank = data.chess_blitz ? data.chess_blitz.rank : 'N/A';
         const percentile = data.chess_blitz ? data.chess_blitz.percentile : 'N/A';
   
         document.getElementById('blitz-rating-value').textContent = blitzRating;
         document.getElementById('rapid-rating-value').textContent = rapidRating;
         document.getElementById('bullet-rating-value').textContent = bulletRating;
+        document.getElementById('puzzle-rating-value').textContent = puzzleRating;
         document.getElementById('global-rank-value').textContent = globalRank !== undefined && percentile !== undefined ? '#' + globalRank + ' (' + percentile + ')' : 'N/A';
       });
   }
