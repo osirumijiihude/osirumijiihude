@@ -13,26 +13,25 @@
 
 /* Default Styles */
 .fullwidth-section {
-    margin-left: 400px; /* Only for large screens */
+    margin-left: 0;
+    width: 100%;
 }
 
 /* Responsive Styles */
 @media screen and (max-width: 768px) {
     .fullwidth-section {
-        margin-left: 0; /* Remove left margin on mobile */
-        text-align: center; /* Center the content on smaller screens */
+        margin-left: 0;
+        text-align: center;
     }
 
     .client-logos {
-        padding: 0;
-        margin: 0 auto; /* Center align logos */
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center; /* Logos centered in flex container */
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        padding-bottom: 10px;
     }
 
     .client-logos li {
-        padding: 10px; /* Space between logos */
+        flex-shrink: 0;
     }
 }
 
@@ -299,12 +298,12 @@
 
 
 /* 2024.5/5 */
-/* chess.com widget */
+/* lichess widget  */
 
 
   .tracker {
     width: 100%;
-    height: 150px;
+    height: 185px;
     font-size: 14px;
     margin: 0 auto;
     margin-top: 5%;
@@ -345,6 +344,16 @@
     margin-left: 5px;
     margin-right: 5px;
   }
+
+
+  .title-bar .wings {
+
+    width: 35px;
+    height: 35px;
+    margin-left: 0px;
+    margin-right: 5px;
+  }
+
   .title-bar .flair {
 
     width: 22px;
@@ -5386,7 +5395,7 @@ body.dark{
 .beny_tm_old-testimonials .left_nav:hover .icon,.beny_tm_old-testimonials .left_nav:hover .icon:after,.beny_tm_old-testimonials .left_nav:hover .icon:before,.beny_tm_old-testimonials .right_nav:hover .icon,.beny_tm_old-testimonials .right_nav:hover .icon:after,.beny_tm_old-testimonials .right_nav:hover .icon:before,body.dark .my_trigger .hamburger .hamburger-inner,body.dark .my_trigger .hamburger .hamburger-inner:after,body.dark .my_trigger .hamburger .hamburger-inner:before,body.light{
     background-color:#fff
 }
-.beny_tm_button button.color span,.beny_tm_button.color a:hover,.beny_tm_hero.white-text-wrapper .content .job,.beny_tm_hero.white-text-wrapper .content .name,.beny_tm_hero.white-text-wrapper .content .text,.beny_tm_topbar.creative .social ul li a,.beny_tm_topbar.creative ul li a,.text aos-init aos-animate,body.dark .beny_tm_about .extra .title,body.dark .beny_tm_about .list ul li p,body.dark .beny_tm_about .short h3,body.dark .beny_tm_button.color a:hover,body.dark .beny_tm_contact .right .title span,body.dark .beny_tm_hero .content .job,body.dark .beny_tm_hero .content .name,body.dark .beny_tm_hero .mobile_social ul li a,body.dark .beny_tm_mobile_menu .dropdown .dropdown_inner ul li a,body.dark .beny_tm_modalbox_news .news_share span,body.dark .beny_tm_modalbox_news .news_share ul li a,body.dark .beny_tm_modalbox_service .popup_informations h3,body.dark .beny_tm_resume .edu_list ul li p span,body.dark .beny_tm_resume .main_title h3,body.dark .beny_tm_resume .resume_title span,body.dark .beny_tm_services ul li h3,body.dark .beny_tm_old-testimonials .item .right .details h3,body.dark .progress_inner span.label,body.dark .tab_list li.react-tabs__tab--selected,body.dark h1,body.dark h2,body.dark h3,body.dark h4,body.dark h5{
+.beny_tm_button button.color span,.beny_tm_button.color a:hover,.beny_tm_hero.white-text-wrapper .content .job,.beny_tm_hero.white-text-wrapper .content .name,.beny_tm_hero.white-text-wrapper .content .text,.beny_tm_topbar.creative .social ul li a,.beny_tm_topbar.creative ul li a,.text aos-init aos-animate,body.dark .beny_tm_about .extra .title,body.dark .beny_tm_about .list ul li p,body.dark .beny_tm_about .short h3,body.dark .beny_tm_button.color a:hover,body.dark .beny_tm_contact .right .title span,body.dark .beny_tm_hero .content .job,body.dark .beny_tm_hero .content .name,body.dark .beny_tm_mobile_social ul li a,body.dark .beny_tm_mobile_menu .dropdown .dropdown_inner ul li a,body.dark .beny_tm_modalbox_news .news_share span,body.dark .beny_tm_modalbox_news .news_share ul li a,body.dark .beny_tm_modalbox_service .popup_informations h3,body.dark .beny_tm_resume .edu_list ul li p span,body.dark .beny_tm_resume .main_title h3,body.dark .beny_tm_resume .resume_title span,body.dark .beny_tm_services ul li h3,body.dark .beny_tm_old-testimonials .item .right .details h3,body.dark .progress_inner span.label,body.dark .tab_list li.react-tabs__tab--selected,body.dark h1,body.dark h2,body.dark h3,body.dark h4,body.dark h5{
     color:#fff
 }
 body.dark .beny_tm_about .list ul li p span,body.dark .beny_tm_contact .short_list ul li a,body.dark .beny_tm_hero .social ul li a,body.dark .beny_tm_news ul li .details span a,body.dark .beny_tm_news ul li .details span a:before,body.dark .beny_tm_resume .edu_list ul li .year,body.dark .beny_tm_resume .edu_list ul li p,body.dark .beny_tm_services ul li .learn_more,body.dark .beny_tm_topbar ul li a,body.dark .progress_inner span.number,body.dark .tab_list li{
@@ -6148,43 +6157,33 @@ h4{
     margin-bottom:15px
 }
 .beny_tm_about .about_inner{
-    width:100%;
-    height:auto;
-    clear:both;
-    display:flex;
-    align-items:center;
-    padding-top:10px;
-    margin-bottom:50px
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
-.beny_tm_about .about_inner .left{
-    width:50%;
-    position:relative;
-    margin-right:50px
+
+.beny_tm_about .about_inner .left {
+    width: 300px;
+    margin: 0;
+    position: relative;
 }
-.beny_tm_about .about_inner .left img{
-    opacity:0;
-    min-width:100%
+
+.beny_tm_about .about_inner .right {
+    width: 50%;
+    padding-right: 50px;
+    text-align: left;
 }
-.beny_tm_about .about_inner .left .image{
-    position:absolute;
-    top:0;
-    bottom:0;
-    left:0;
-    right:0;
-    background-repeat:no-repeat;
-    background-size:cover;
-    background-position:50%;
-    border-radius:8px;
-}
-.beny_tm_about .about_inner .right{
-    width:50%;
-    padding-left:50px
-}
+
 .beny_tm_about .short{
-    width:100%;
-    float:left;
-  
-    padding-bottom:20px
+    text-align: left;
+}
+.beny_tm_about .short p:first-of-type {
+    text-align: left;
+    margin-left: 0;
 }
 .beny_tm_about .short h3{
     font-size:32px;
@@ -8134,4 +8133,58 @@ body.intro .loader_line:after{
     background:#fff;
     border-radius:5px;
     margin-top:-6px
+}
+
+.fullwidth-section {
+    margin-left: 0;
+    width: 100%;
+}
+
+.client-logos {
+    display: flex;
+    flex-wrap: nowrap; /* Keep logos in single line */
+    gap: 20px;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.client-logos li {
+    flex: 0 1 auto;
+    max-width: 180px; /* Keep original size */
+}
+
+.client-logos img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+@media screen and (max-width: 768px) {
+    .client-logos {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        padding-bottom: 10px;
+    }
+    
+    .client-logos li {
+        flex-shrink: 0;
+    }
+}
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+@media screen and (max-width: 768px) {
+    .client-logos {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        padding-bottom: 10px;
+    }
+    
+    .client-logos li {
+        flex-shrink: 0;
+    }
 }
